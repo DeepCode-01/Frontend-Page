@@ -67,3 +67,16 @@
     @apply bg-background text-foreground;
   }
 }
+.box-animate {
+ border-radius: 10px;
+ animation: glow 3s infinite alternate;
+}
+
+@keyframes glow{
+  0%{
+    box-shadow: 0 0 5px #0000;
+  }
+  100%{
+    box-shadow: 0 0 20px 10px #0000;
+  }
+}
